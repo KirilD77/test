@@ -6,7 +6,7 @@ app.use(json())
 
 app.post('/', (req, res) => {
   console.log(req.body)
-  return 2;
+  res.send(JSON.stringify(req.body))
 })
 
 app.listen(port, () => {
